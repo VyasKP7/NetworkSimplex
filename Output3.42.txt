@@ -1,0 +1,93 @@
+The Network problem is:
+
+b = 
+	10	30	0	-20	-20	
+	
+C = 
+	0	3	3	6	4	
+	3	0	5	4	8	
+	3	5	0	2	5	
+	6	4	2	0	5	
+	4	8	5	5	0	
+	
+Starting Phase I
+
+Simplex Iteration 1
+
+X13 will enter basis
+X63 will leave basis
+
+Simplex Iteration 2
+
+X14 will enter basis
+X16 will leave basis
+
+Simplex Iteration 3
+
+X21 will enter basis
+X64 will leave basis
+
+Simplex Iteration 4
+
+X15 will enter basis
+X65 will leave basis
+
+Simplex Iteration 5
+
+X23 will enter basis
+X13 will leave basis
+
+Simplex Iteration 6
+
+X24 will enter basis
+X14 will leave basis
+
+Simplex Iteration 7
+
+X25 will enter basis
+X21 will leave basis
+
+Simplex Iteration 8
+
+Initial BFS Reached
+
+
+Initial BFS = 
+X15 = 10.000000, X23 = 0.000000, X24 = 20.000000, X25 = 10.000000, 
+Initial Cost = 200.000000
+
+Starting Phase II
+
+Simplex Iteration 1
+
+X21 will enter basis
+X25 will leave basis
+
+Current BFS = 
+X15 = 20.000000, X21 = 10.000000, X23 = 0.000000, X24 = 20.000000, 
+Current Cost = 190.000000
+
+Simplex Iteration 2
+
+Optimal Solution Reached
+
+
+Optimal Solution = 
+X15 = 20.000000, X21 = 10.000000, X23 = 0.000000, X24 = 20.000000, 
+Optimal Cost = 190.000000
+
+Contraint Check:
+All Xij >= 0
+
+Checking Sources
+Source 1, b(1) and all recieved= 20.000000, sum(A(1)) = 20.000000, Correct.
+Source 2, b(2) and all recieved= 30.000000, sum(A(2)) = 30.000000, Correct.
+
+Checking Destination
+Destination 3, b(3) and all lost= 0.000000, sum(A(3)) = 0.000000, Correct.
+Destination 4, b(4) and all lost= 20.000000, sum(A(4)) = 20.000000, Correct.
+Destination 5, b(5) and all lost= 20.000000, sum(A(5)) = 20.000000, Correct.
+
+The solution is feasible.
+
+Time Taken: 0.041948 seconds
